@@ -1,0 +1,81 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main App Container */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #ffffff;
+}
+
+/* Logo */
+.App-logo {
+  height: 140px;
+  pointer-events: none;
+  transition: transform 0.4s ease;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 12s linear;
+  }
+}
+
+/* Header */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: calc(14px + 2vmin);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+}
+
+/* Heading Style */
+.App-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Link Button Style */
+.App-link {
+  color: #ffffff;
+  text-decoration: none;
+  background: #2563eb;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.App-link:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Logo Spin Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
